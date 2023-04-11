@@ -1,7 +1,7 @@
 from keras import backend as K
 from keras.metrics import categorical_crossentropy
 
-if K.common.image_dim_ordering() == 'tf':
+if K.image_dim_ordering() == 'tf':
 	import tensorflow as tf
 
 lambda_rpn_regr = 1.0
